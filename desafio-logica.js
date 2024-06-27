@@ -1,5 +1,5 @@
 let heroi = 'arthur'
-let xp = 1001;
+let xp = 900;
 
 let classe = "";
 if (xp <= 1000) {
@@ -7,25 +7,39 @@ if (xp <= 1000) {
 
 
 } else if (xp <= 2000) {
-    console.log("Hoje é segunda.")
+    classe = "Bronze"
+
 
 }
 else if (xp <= 5000) {
-    console.log("Hoje é terça.")
+    classe = "Prata"
+
 
 } else if (xp <= 7000) {
-    console.log("Hoje é quarta.")
+    classe = "Ouro"
+
 
 } else if (xp <= 8000) {
-    console.log("Hoje é quinta.")
+    classe = "Platina"
+
 
 } else if (xp <= 9000) {
-    console.log("Hoje é sexta.")
+    classe = "Ascendente"
 
-} else {
-    
 
-}
+} 
+
+ else if (xp <= 10000) {
+    classe = "Imortal"
+
+
+} 
+
+else if (xp >= 10001) {
+    classe = "Radiante"
+
+
+} 
 
 
 console.log(`O Herói de nome ${heroi} está no nível de ${classe}`)
